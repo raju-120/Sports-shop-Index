@@ -85,6 +85,7 @@ body{
 
 /*#Features_part_start*/
 
+
 .catgeories{
     margin: 50px 0;
 }
@@ -97,31 +98,248 @@ body{
 
 .catgeories .row img{
     width: 100%;
-    height: 650px;
 }
-.catgeories .small-container{
-    padding-left: 50px;
-    padding-right: 50px;
-}
-/*
-.catgeories .small-container{
-    display: flex;
-    max-width: 1080px;
+.small-container{
+    max-width: 1080%;
     margin: auto;
-    padding-left: 50px;
-    padding-right: 25px;
+    padding-left: 25px;
+    padding-right: 25px; 
 }
-*/
 
 .col-4{
-    flex-basis: 30px;
-    padding-right: 50px;
-    margin: auto;
+    flex-basis: 25%;
+    padding: 10px;
     min-width: 200px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
+    transition: transform 0.3s;
 }
 
 .col-4 img{
-    width: 80%;
+    width: 100%;
+}
+
+.tittle{
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    font-size: 50px;
+    line-height: 70px;
+    color: #555;
+}
+
+.tittle::after{
+    content: '';
+    background-color: #ff253b;
+    width: 300px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+h4{
+    color: #555;
+    font-weight: normal;
+}
+
+.col-4 p{
+    font-size: 16px;
+}
+
+.ratting .fa{
+    color: #ff253b;
+}
+
+.col-4:hover{
+    transform: translateY(-20px);
+}
+
+/*Execlusive item*/
+.new{
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 50px;
+    font-size: 50px;
+    color: darkred;
+
+}
+.new::after{
+    content: '';
+    background-color: maroon;
+    width: 300px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.col-2{
+    font-size: 20px;
+    color: #555;
+    transition: transform .5s;
+}
+.col-2:hover{
+    transform: translateY(-20px);
+}
+
+/*            Offer Section            */
+
+.offer{
+    background: radial-gradient(#fff,#ffd6d6);
+    margin-top: 5px;
+    padding: 30px 0;
+}
+.col-2 .offer-img{
+    padding: 50px;
+}
+small{
+    color: black;
+}
+
+/*      User Testimony ---*/
+
+.testimonial{
+    padding-top: 80px;
     margin-bottom: 50px;
+    
+}
+.testimonial .col-3{
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+.testimonial .col-3 img{
+    width: 200px;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+.testimonial .col-3:hover{
+    transform: translateY(-10px);
+}
+.fa.fa-quote-left{
+    font-size: 30px;
+    color: #ff253b;
+}
+.col-3 p{
+    font-size: 15px;
+    margin: 12px 0;
+    color: #777;
+}
+.testimonial .col-3 h3{
+    font-weight: 600;
+    color: #555;
+    font-size: 15px;
+}
+
+/*--------------Brands---------*/
+.brand{
+    margin: 100px auto;
+}
+.col-5{
+    width: 160px;
+}
+.col-5 img{
+    width: 100%;
+    cursor: pointer;
+    filter: grayscale(100%);
+}
+.col-5 img:hover{
+    filter: grayscale(0);
+}
+
+
+/*--------Footer-------*/
+.footer{
+    background: #000;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 60px 0 20px;
+}
+.footer p{
+    color: #8a8a8a;
+}
+.footer h3{
+    color: #fff;
+    margin-bottom: 10px;
+}
+.footer-col-1, .footer-col-2, .footer-col-3, ..footer-col-4{
+    min-width: 250px;
+    margin-bottom: 10px;
+}
+.footer-col-1{
+    flex-basis: 30%;
+}
+.footer-col-2{
+    flex: 1;
+    text-align: center;
+}
+.footer-col-2 img{
+    width: 180px;
+    margin-bottom: 20px;
+}
+.footer-col-3, .footer-col-4{
+    flex-basis: 12%;
+    text-align: center;
+}
+ul{
+    list-style: none;
+}
+
+.app-logo{
+    margin-top: 20px;
+}
+.app-logo img{
+    width: 140px;
+}
+
+.footer hr{
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 20px 0;
+}
+
+.footer .copywrite{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.menu-icon{
+    width: 5%;
+    margin-left: 20px;
+   /* display: none;*/
+}
+
+/*---------Media Query For menu---*//*
+@media only screen and (max-width: 800px){
+    .nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #333;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+    .nav ul li{
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .nav ul li a{
+        color: white;
+    }
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+
+    }
 }
