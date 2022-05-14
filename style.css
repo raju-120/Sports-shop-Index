@@ -314,10 +314,10 @@ ul{
 .menu-icon{
     width: 5%;
     margin-left: 20px;
-   /* display: none;*/
+   display: none
 }
 
-/*---------Media Query For menu---*//*
+/*---------Media Query For menu
 @media only screen and (max-width: 800px){
     .nav ul{
         position: absolute;
@@ -325,9 +325,9 @@ ul{
         left: 0;
         background: #333;
         width: 100%;
-        overflow: hidden;
-        transition: max-height 0.5s;
-    }
+        /*overflow: hidden;
+        transition: max-height 0.5s;*/
+ /*   }
     .nav ul li{
         display: block;
         margin-right: 50px;
@@ -340,6 +340,7 @@ ul{
     .menu-icon{
         display: block;
         cursor: pointer;
-
+        
     }
-}
+    
+}*/
